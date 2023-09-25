@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    font-family: Arial;
+    font-size: 30px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+.m-rules,.m-competitions,.m-how-to-play,.m-about-us,.m-previous-winners {
+    cursor: pointer;
+    padding-left: 20px;
+    }
+.m-rules:hover,.m-competitions:hover,.m-how-to-play:hover,.m-about-us:hover,
+.m-previous-winners:hover{
+    color: white;
+    transition: 0.5s;
+    }
+.b-login,.b-sign-up {
+    border: none; 
+    background-color: rgb(15, 227, 44); 
+    font-family: Arial;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 20px;
+    transition: opacity 0.5s;
+    }
+.b-login:hover,.b-sign-up:hover {
+    opacity: 0.8;
+    }
+.b-login:active,.b-sign-up:active {
+    opacity: 0.3;
+    }
+.comp-img,.raffle-img {
+    width: 100%;
+    }
+.raffleprize {
+    font-family: arial;
+    color: white;
+    width: 500px;
+    
+    }
+.raffle-img:hover {
+    opacity: 0.8;
+    }
+.raffletitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+
+.raffledescription {
+    font-size: 16;
+    margin-top: 10px;
+    }
+.rafflebottom {
+    
+}
+.rafflepricebox {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-top: 18px;
+}
+.rafflebuybox {
+    float: right;
+    
+}   
+.b-buy-ticket {
+    border: none; 
+    background-color: rgb(15, 227, 44); 
+    font-family: Arial;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+    transition: opacity 0.1s;
+    
+    }
+.b-buy-ticket:hover {
+    opacity: 0.8;
+    }
+.b-buy-ticket:active {
+    opacity: 0.3;
+    }
+.rafflecontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}

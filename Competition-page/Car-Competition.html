@@ -2,107 +2,14 @@
 <html>
 
   <head>
+    <link rel="stylesheet" href="car-competition.css">
     <title>Car Competition Site</title>
     <body style="background-color: black;">
+
     <style>
 
-      .menu {
-        font-family: Arial;
-        font-size: 30px;
-        background-color: black;
-        color: red;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .m-rules,.m-competitions,.m-how-to-play,.m-about-us,.m-previous-winners {
-        cursor: pointer;
-        padding-left: 20px;
-        
-      }
-      .m-rules:hover,.m-competitions:hover,.m-how-to-play:hover,.m-about-us:hover,
-      .m-previous-winners:hover{
-        color: white;
-        transition: 0.5s;
-      }
-      .b-login,.b-sign-up {
-      border: none; 
-      background-color: rgb(15, 227, 44); 
-      font-family: Arial;
-      font-size: 16px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 22px;
-      padding-right: 22px;
-      border-radius: 5px;
-      cursor: pointer;
-      vertical-align: top;
-      margin-left: 20px;
-      transition: opacity 0.5s;
-      }
-      .b-login:hover,.b-sign-up:hover {
-      opacity: 0.8;
-      }
-      .b-login:active,.b-sign-up:active {
-      opacity: 0.3;
-      }
-      .comp-img {
-        width: 500px;
-      }
-      .comp-prize {
-        font-family: arial;
-        color: white;
-        width: 500px;
-        margin-top: 50px;
-        margin-left: 10px;
-        
-        
-      }
-      .comp-img:hover {
-        opacity: 0.8;
-      }
-      .img-title {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .img-desc {
-        font-size: 16;
-      }
-      .img-price {
-        font-size: 18px;
-        font-weight: bold;
-        display: inline-block;
-        
-      }
-      .b-buy-ticket {
-      border: none; 
-      background-color: rgb(15, 227, 44); 
-      font-family: Arial;
-      font-size: 16px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 22px;
-      padding-right: 22px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-left: 20px;
-      transition: opacity 0.1s;
-      margin-left: 220px;
-      }
-      .b-buy-ticket:hover {
-        opacity: 0.8;
-      }
-      .b-buy-ticket:active {
-        opacity: 0.3;
-      }
-      .rafflecontent {
-        margin: 0 auto;
-        width: 1530px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: horizontal;
-      }
-    </style>
+
+    </style>  
 
   </head>
     
@@ -119,55 +26,78 @@
     <button class="b-sign-up">Sign Up</button>
 
     <div class="rafflecontent">
-      <div class="comp-prize">
-        <img class="comp-img" src="images/porsche.webp"/>
-        <p class="img-title">
-        Porsche 718 Cayman GT4 RS
-        </p>
-        <p class="img-desc">
-        It has taken a while for Porsche to throw everything it’s got at its smallest sports car,
-         the Cayman. In a few years, it’s going purely electric, so it was a case of now or never. 
-         Combining the lighter, mid-engined body with the scintillating engine from the Porsche 911 
-         GT3 sounds like a recipe for something spectacular, and the result is nothing short of mind-blowing.
-        </p>
-        <p class="img-price">
-        Ticket Price £2.99
-        </p>
-        <button class="b-buy-ticket">Purchase</button>
-      </div>
-
-      <div class="comp-prize">
-        <img class="comp-img" src="images/lamborghini.webp"/>
-        <p class="img-title">
-        Lamborghini Huracán STO
-        </p>
-        <p class="img-desc">
-          You can count on Lamborghini to make something dramatic, but its machines don’t generally go toe to toe with
-           GT Porsches for sharpness, poise and trackability. But in a similar twist to the one we’ve seen with the 718 
-           Cayman GT4 RS, it seems the engineers have been let off the leash as the Huracán nears the end of its life.
-        </p>
-        <p class="img-price">
-        Ticket Price £4.99
-        </p>
-        <button class="b-buy-ticket">Purchase</button>
-      </div>
-
-      <div class="comp-prize">
-        <img class="comp-img" src="images/porschegt3.webp"/>
-        <p class="img-title">
-          Porsche 911 GT3 RS
-        </p>
-        <p class="img-desc">
-          When the 992 generation of the 911 GT3 first showed its swan-neck rear wing, we wondered whether it
-           left any room for an even more hardcore GT3 RS. But you can leave it to Weissach to take the challenge 
-           and go overboard with it.
-        </p>
-        <p class="img-price">
-        Ticket Price £3.99
-        </p>
-        <button class="b-buy-ticket">Purchase</button>
+      <div class="raffleprize">
+          <div class="raffleimage">
+            <img class="raffle-img" src="images/porsche.webp">
+          </div>
+          <div class="raffletitle">
+            Porsche 718 Cayman GT4 RS
+          </div>
+          <div class="raffledescription">
+            It has taken a while for Porsche to throw everything it’s got at its smallest sports car,
+            the Cayman. In a few years, it’s going purely electric, so it was a case of now or never. 
+            Combining the lighter, mid-engined body with the scintillating engine from the Porsche 911 
+            GT3 sounds like a recipe for something spectacular, and the result is nothing short of mind-blowing.
+          </div>
+          <div class="rafflebottom">
+            <div class="rafflepricebox">
+              Ticket Price £2.99
+            </div>
+            <div class="rafflebuybox">
+              <button class="b-buy-ticket">Purchase</button>
+            </div>
+          </div>
       </div>
     </div>
+
+    <div class="rafflecontent">
+      <div class="raffleprize">
+          <div class="raffleimage">
+            <img class="raffle-img" src="images/lamborghini.webp">
+          </div>
+          <div class="raffletitle">
+            Lamborghini Huracán STO
+          </div>
+          <div class="raffledescription">
+            You can count on Lamborghini to make something dramatic, but its machines don’t generally go toe to toe with
+           GT Porsches for sharpness, poise and trackability. But in a similar twist to the one we’ve seen with the 718 
+           Cayman GT4 RS, it seems the engineers have been let off the leash as the Huracán nears the end of its life.
+          </div>
+          <div class="rafflebottom">
+            <div class="rafflepricebox">
+              Ticket Price £4.99
+            </div>
+            <div class="rafflebuybox">
+              <button class="b-buy-ticket">Purchase</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="rafflecontent">
+      <div class="raffleprize">
+          <div class="raffleimage">
+            <img class="raffle-img" src="images/porschegt3.webp">
+          </div>
+          <div class="raffletitle">
+            Porsche 911 GT3 RS
+          </div>
+          <div class="raffledescription">
+            When the 992 generation of the 911 GT3 first showed its swan-neck rear wing, we wondered whether it
+           left any room for an even more hardcore GT3 RS. But you can leave it to Weissach to take the challenge 
+           and go overboard with it.
+          </div>
+          <div class="rafflebottom">
+            <div class="rafflepricebox">
+              Ticket Price £3.99
+            </div>
+            <div class="rafflebuybox">
+              <button class="b-buy-ticket">Purchase</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
   </body>
 
 
